@@ -9,16 +9,16 @@ $(function() {
   })
 
   socket.on('incidencia:resolved', function (incidencias_n1) {
-  	alert('resuelta!')
+  	alert('PARTICIPANTE: Incidencia Resuelta!')
   	$("#registrar-incidencia").removeAttr('disabled')
   })
   socket.on('incidencia:pass:n2', function (incidencias_n1) {
-  	alert('paso a nivel 2')
+  	alert('PARTICIPANTE: Incidencia pasa a nivel 2')
   })
   socket.on('incidencia:pass:n3', function (incidencias_n1) {
-  	alert('paso a nivel 3')
+  	alert('PARTICIPANTE: Incidencia pasa a nivel 3')
   })
   socket.on('incidencia:pass:gerencia', function (incidencias_n1) {
-  	alert('paso a gerencia')
+  	alert('PARTICIPANTE: Incidencia pasa a Gerencia')
   })
 });
